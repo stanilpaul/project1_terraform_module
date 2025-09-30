@@ -1,4 +1,4 @@
-# 🏗️ Architecture Modulaire Azure avec Terraform  
+# 🏗️ Modular Azure Architecture with Terraform  
 > *Networking • Compute • Load Balancing • Bastion*
 
 ![Terraform](https://img.shields.io/badge/Terraform-v1.3%2B-blue?logo=terraform&style=for-the-badge)
@@ -7,62 +7,62 @@
 
 ---
 
-## 🚀 Voir la démo & documentation complète
+## 🚀 See Live Demo & Full Documentation
 
-👉 **[Clique ici pour accéder à la page complète du projet sur mon portfolio](https://stanilpaul.github.io/projects/project1-terraform-module/)**
+<a href="https://stanilpaul.github.io/projects/project1-terraform-module/" target="_blank" rel="noopener noreferrer">👉 Click here to view the full project page on my portfolio (opens in new tab)</a>
 
-Tu y trouveras :
-- 🎥 **Vidéo de démonstration** (3 min) — déploiement, LB, Bastion, state files
-- 📸 **Captures d’écran détaillées** par module
-- 🧩 **Schéma d’architecture** complet
-- 🔄 **Workflow de déploiement** avec remote state files séparés
-- ✅ **Bonnes pratiques DevOps & sécurité**
-- 🛠️ **Stack technique complète**
-- 📈 Axes d’amélioration & limites
-- 🧠 Ce que j’ai appris — erreurs, apprentissages, transformation
-
----
-
-## 📌 À propos du projet
-
-Ce projet simule une **infrastructure cloud modulaire en environnement de production**, conçue pour être gérée par **plusieurs équipes métiers indépendantes** :
-
-- 👨‍💻 **Équipe Réseau** → VNet, Subnets, NSG, NAT Gateway
-- 👩‍💻 **Équipe Compute** → VMs Linux + Apache via cloud-init
-- 👨‍🔧 **Équipe SRE** → Load Balancers (externe + interne)
-- 👮‍♂️ **Équipe Sécurité** → Azure Bastion pour accès sécurisé
-
-✅ Chaque module a son propre **remote state file** (stocké dans Azure Blob Storage)  
-✅ Dépendances explicites entre modules  
-✅ Extensible via maps dynamiques (`for_each`, pas de `count`)  
-✅ Documentation auto-générée avec `terraform-docs`
+You’ll find:
+- 🎥 **Demo video (3 min)** — deployment, load balancers, Bastion, state files
+- 📸 **Detailed screenshots** per module
+- 🧩 **Full architecture diagram**
+- 🔄 **Deployment workflow** with separate remote state files
+- ✅ **DevOps & security best practices**
+- 🛠️ **Full tech stack**
+- 📈 Improvement areas & limitations
+- 🧠 Key learnings — mistakes, breakthroughs, growth
 
 ---
 
-## 🔗 Liens utiles
+## 📌 About This Project
 
-| Ressource | Lien |
+This project simulates a **modular cloud infrastructure in a production-like environment**, designed to be managed by **multiple independent teams**:
+
+- 👨‍💻 **Networking Team** → VNet, Subnets, NSG, NAT Gateway
+- 👩‍💻 **Compute Team** → Linux VMs + Apache via cloud-init
+- 👨‍🔧 **SRE / Infra Team** → External + Internal Load Balancers
+- 👮‍♂️ **Security / Support Team** → Azure Bastion for secure access (no open SSH/RDP ports)
+
+✅ Each module uses its own **remote state file** (stored in Azure Blob Storage)  
+✅ Explicit inter-module dependencies  
+✅ Extensible via dynamic maps (`for_each`, no `count`)  
+✅ Auto-generated documentation with `terraform-docs`
+
+---
+
+## 🔗 Useful Links
+
+| Resource | Link |
 |----------|------|
-| 🌐 **Portfolio - Page complète du projet** | [https://stanilpaul.github.io/projects/project1-terraform-module/](https://stanilpaul.github.io/projects/project1-terraform-module/) |
-| 💻 **Dépôt principal du projet** | [https://github.com/stanilpaul/project1_terraform_module](https://github.com/stanilpaul/project1_terraform_module) |
-| 📦 **Modules sur Terraform Registry** | [https://registry.terraform.io/namespaces/stanilpaul](https://registry.terraform.io/namespaces/stanilpaul) |
-| 📁 **Module Networking** | [GitHub](https://github.com/stanilpaul/terraform-azurerm-networking-project1) |
-| 📁 **Module Compute** | [GitHub](https://github.com/stanilpaul/terraform-azurerm-compute-web-tier-project1) |
-| 📁 **Module Load Balancing** | [GitHub](https://github.com/stanilpaul/terraform-azurerm-load-balancing-project1) |
-| 📁 **Module Bastion** | [GitHub](https://github.com/stanilpaul/terraform-azurerm-bastion-project1) |
+| 🌐 <a href="https://stanilpaul.github.io/projects/project1-terraform-module/" target="_blank" rel="noopener noreferrer">Portfolio - Full Project Page</a> | Opens in new tab |
+| 💻 <a href="https://github.com/stanilpaul/project1_terraform_module" target="_blank" rel="noopener noreferrer">Main Project Repository</a> | Opens in new tab |
+| 📦 <a href="https://registry.terraform.io/namespaces/stanilpaul" target="_blank" rel="noopener noreferrer">Terraform Registry Modules</a> | Opens in new tab |
+| 📁 <a href="https://github.com/stanilpaul/terraform-azurerm-networking-project1" target="_blank" rel="noopener noreferrer">Networking Module</a> | Opens in new tab |
+| 📁 <a href="https://github.com/stanilpaul/terraform-azurerm-compute-web-tier-project1" target="_blank" rel="noopener noreferrer">Compute Module</a> | Opens in new tab |
+| 📁 <a href="https://github.com/stanilpaul/terraform-azurerm-load-balancing-project1" target="_blank" rel="noopener noreferrer">Load Balancing Module</a> | Opens in new tab |
+| 📁 <a href="https://github.com/stanilpaul/terraform-azurerm-bastion-project1" target="_blank" rel="noopener noreferrer">Bastion Module</a> | Opens in new tab |
 
 ---
 
-## 📬 Contact / Questions ?
+## 📬 Contact / Questions?
 
-Envie de discuter architecture, Terraform ou DevOps ?  
-→ Portfolio : [https://stanilpaul.github.io/](https://stanilpaul.github.io/)  
-→ LinkedIn : [https://www.linkedin.com/in/stanilpaul/](https://www.linkedin.com/in/stanilpaul/)
-
----
-
-> ✨ *“Ce projet n’est pas juste un lab — c’est une simulation de production qui prouve ma capacité à concevoir des infrastructures modulaires, sécurisées et maintenables par plusieurs équipes.”*
+Want to discuss architecture, Terraform, or DevOps?  
+→ Portfolio: <a href="https://stanilpaul.github.io/" target="_blank" rel="noopener noreferrer">https://stanilpaul.github.io/</a>  
+→ LinkedIn: <a href="https://www.linkedin.com/in/stanilpaul/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/stanilpaul/</a>
 
 ---
 
-✅ **Prêt à explorer ? Rendez-vous sur [la page dédiée du projet](https://stanilpaul.github.io/projects/project1-terraform-module/) !**
+> ✨ *“This isn’t just a lab — it’s a production-grade simulation proving I can design modular, secure, team-scalable cloud infrastructures.”*
+
+---
+
+✅ <a href="https://stanilpaul.github.io/projects/project1-terraform-module/" target="_blank" rel="noopener noreferrer">Ready to explore? Visit the full project page →</a>
