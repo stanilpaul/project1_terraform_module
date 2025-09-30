@@ -1,4 +1,5 @@
 locals {
+  # I am taking output from network module state
   vnets = data.terraform_remote_state.network.outputs.network.subnets_details
   rg    = data.terraform_remote_state.network.outputs.resource_group.rg_details
 

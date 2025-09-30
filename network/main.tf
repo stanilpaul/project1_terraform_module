@@ -25,7 +25,7 @@ module "resource-group" {
 #network module for network team 
 # I will use separate state file for this 
 ###########################################
-
+# This is from my terraform private repo module.
 module "network" {
   source             = "app.terraform.io/learn-terraform-modules-paul/networking-project1/azurerm"
   version            = "1.0.0"

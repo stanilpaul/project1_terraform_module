@@ -1,12 +1,13 @@
 ##############################################
-#network module for support team 
+#bastion(testing) module for support team 
 # I will use separate state file for this 
 ###########################################
 module "testing" {
-  source              = "../modules/bastion"
-  rg_name             = module.resource-group.rg_details.name
-  location            = module.resource-group.rg_details.location
-  vnet_name           = module.network.vnet_details.name
+  source              = "app.terraform.io/learn-terraform-modules-paul/bastion-project1/azurerm"
+  version             = "1.0.0"
+  rg_name             = local.rg.name
+  location            = local.rg.location
+  vnet_name           = local.network.name
   bastion_subnet_cidr = var.bastion_ip_range
   bastion_ip_name     = "bastion-ip"
   bastion_name        = "bastion-host"
