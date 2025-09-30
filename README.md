@@ -57,7 +57,7 @@ This project simulates a **modular cloud infrastructure in a production-like env
 
 Want to discuss architecture, Terraform, or DevOps?  
 → Portfolio: <a href="https://stanilpaul.github.io/" target="_blank" rel="noopener noreferrer">https://stanilpaul.github.io/</a>  
-→ LinkedIn: <a href="https://www.linkedin.com/in/stanilpaul/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/stanilpaul/</a>
+→ LinkedIn: <a href="https://www.linkedin.com/in/paul-stanil-grasian-9a9989187/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/stanilpaul/</a>
 
 ---
 
